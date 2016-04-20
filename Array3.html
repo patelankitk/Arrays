@@ -1,0 +1,67 @@
+<!----Add and Remove first and last elements  on and off an array using shift, unshift, push and pop methods---->
+
+<!DOCTYPE html>
+<html>
+<body>
+    
+    
+    
+    
+        <div><button onclick="shift1()">Shift</button></div>
+        <div><button onclick="unshift1()">Unshift</button></div>
+        <div><button onclick="push1()">push</button></div>
+        <div><button onclick="pop1()">pop</button></div>
+        
+
+
+
+    
+<p id="demo"></p>
+<p id="demo1"></p>
+
+    
+
+<script>
+    
+    var names = ["violet","indigo","blue","green","yellow","orange","red"];
+            
+    
+    document.getElementById("demo1").innerHTML = names;
+    
+    function shift1()
+    {
+        var x = names.shift()
+        document.getElementById("demo").innerHTML = "Removes first element " + x + " The New Array :- " + names;
+
+    }
+    
+    function unshift1()
+    {
+        names.unshift("New First");
+        
+        document.getElementById("demo").innerHTML ="Adds new element to the begining of array. "+ " The New array is :-" + names;
+    }
+    
+    function push1()
+    {
+        names.push("New Last");
+        
+        document.getElementById("demo").innerHTML = "Adds new element to the end of the array. "+" The New array is " + names;
+
+        
+    }
+    
+    function pop1()
+    {
+        var x =names.pop();
+        
+        document.getElementById("demo").innerHTML = "Removes the last element of the array. "+x + " The New array is " + names;
+
+    }
+    
+</script>
+
+</body>
+</html>
+
+

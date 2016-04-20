@@ -1,0 +1,33 @@
+<!----Add to an array at a specific index point in the array---->
+
+<!DOCTYPE html>
+<html>
+<body>
+        <div><button onclick="splice1()">Splice</button></div>
+    
+<p id="demo"></p>
+<p id="demo1"></p>
+
+    
+
+<script>
+    
+    var names = ["violet","indigo","blue","green","yellow","orange","red"];
+            
+    
+    document.getElementById("demo1").innerHTML = names;
+    
+    function splice1()
+    {
+        names.splice(2,0,3,4)
+        document.getElementById("demo").innerHTML = "Adds 3 and 4 to index 2 and index 3 "+ " The New Array :- " + names;
+
+    }
+    
+    
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!----Collect a user input and allocate it to a new array using the push method.
+Display the array and the length of the array (number of elements) using array.length on the webpage---->
+
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+    <input type="text" id="input1">
+    </form>
+    
+    
+    <div><button id="button">Submit</button></div>
+    
+<p id="demo"></p>
+
+<script>
+    // Event Listner on Button Click
+    
+    event1 = document.getElementById("button");
+    event1.addEventListener('click',names,false);
+    
+    
+    function names()
+    {
+    var inputarray = [];
+    
+    
+    var inputarray1=document.getElementById("input1").value;
+    
+        
+        inputarray.push(inputarray1);
+            
+    
+    document.getElementById("demo").innerHTML = "The Array is = "+ inputarray + "<br>" + "The Length of the array is " + inputarray.length;
+    }
+</script>
+
+</body>
+</html>
+
+
